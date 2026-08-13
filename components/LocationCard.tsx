@@ -23,7 +23,10 @@ export function LocationCard({
   const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodedCoordinates}`;
 
   return (
-    <section className="mt-10 px-5" aria-labelledby="location-heading">
+    <section
+      className="mt-10 px-5 max-[359px]:mt-8 max-[359px]:px-3"
+      aria-labelledby="location-heading"
+    >
       <div className="mb-4 flex items-center gap-2">
         <HiMapPin className="text-xl text-sky-400" aria-hidden="true" />
         <h2 id="location-heading" className="text-lg font-bold text-white">
@@ -39,9 +42,9 @@ export function LocationCard({
           height="220"
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
-          className="block border-0 grayscale-[0.15] contrast-[1.05]"
+          className="block h-[clamp(11rem,62vw,13.75rem)] w-full border-0 grayscale-[0.15] contrast-[1.05]"
         />
-        <div className="p-5">
+        <div className="p-5 max-[359px]:p-4">
           <h3 className="font-semibold text-white">{dealerName}</h3>
           <p className="mt-1 text-sm leading-5 text-slate-400">{address}</p>
           <a

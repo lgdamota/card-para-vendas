@@ -8,7 +8,7 @@ import { sellerData } from "@/data/sellerData";
 
 export default function Home() {
   return (
-    <main className="relative mx-auto min-h-svh w-full max-w-[480px] overflow-hidden bg-slate-950 shadow-[0_0_80px_rgba(0,0,0,0.55)]">
+    <main className="relative isolate mx-auto min-h-svh w-full max-w-[480px] overflow-x-hidden bg-slate-950 shadow-[0_0_80px_rgba(0,0,0,0.55)]">
       <div className="pointer-events-none absolute inset-x-0 top-[30svh] h-96 bg-[radial-gradient(circle_at_center,rgba(0,132,255,0.12),transparent_65%)]" />
       <Hero
         backgroundImage={sellerData.motorcycleImage}

@@ -5,6 +5,12 @@
   --foreground: #f8fafc;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -14,11 +20,14 @@
 html {
   min-height: 100%;
   background: #030712;
+  overflow-x: hidden;
+  overflow-x: clip;
 }
 
 body {
   min-height: 100%;
   margin: 0;
+  overflow-wrap: anywhere;
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
@@ -29,6 +38,12 @@ body {
       transparent 28rem
     ),
     linear-gradient(135deg, #030712 0%, #07111f 52%, #02040a 100%);
+}
+
+img,
+svg,
+iframe {
+  max-width: 100%;
 }
 
 button,

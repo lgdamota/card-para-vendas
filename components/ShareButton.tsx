@@ -50,16 +50,19 @@ export function ShareButton({
   }
 
   return (
-    <div className="mt-9 px-5 text-center">
+    <div className="mt-9 px-5 text-center max-[359px]:mt-8 max-[359px]:px-3">
       <button
         type="button"
         onClick={handleShare}
-        className="inline-flex min-h-12 items-center justify-center gap-2 rounded-full border border-sky-400/40 bg-sky-400/10 px-6 text-sm font-semibold text-sky-300 backdrop-blur-md transition duration-300 hover:border-sky-300 hover:bg-sky-400 hover:text-slate-950 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-300"
+        className="inline-flex min-h-12 max-w-full items-center justify-center gap-2 rounded-full border border-sky-400/40 bg-sky-400/10 px-6 text-center text-sm font-semibold leading-5 text-sky-300 backdrop-blur-md transition duration-300 hover:border-sky-300 hover:bg-sky-400 hover:text-slate-950 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-300 max-[359px]:px-4 max-[359px]:text-[0.8rem]"
       >
         {feedback ? (
-          <HiOutlineCheckCircle className="text-xl" aria-hidden="true" />
+          <HiOutlineCheckCircle
+            className="shrink-0 text-xl"
+            aria-hidden="true"
+          />
         ) : (
-          <HiOutlineShare className="text-xl" aria-hidden="true" />
+          <HiOutlineShare className="shrink-0 text-xl" aria-hidden="true" />
         )}
         {feedback || label}
       </button>

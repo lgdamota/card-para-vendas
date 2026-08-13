@@ -10,8 +10,8 @@ type FooterProps = {
 
 export function Footer({ dealerName, qrCodeLabel, qrCodeUrl }: FooterProps) {
   return (
-    <footer className="mt-10 border-t border-white/10 px-5 pb-[max(2rem,env(safe-area-inset-bottom))] pt-8 text-center">
-      <div className="mx-auto w-fit rounded-2xl bg-white p-3 shadow-[0_15px_40px_rgba(0,0,0,0.3)]">
+    <footer className="mt-10 border-t border-white/10 px-5 pb-[max(2rem,env(safe-area-inset-bottom))] pt-8 text-center max-[359px]:px-3">
+      <div className="mx-auto w-fit max-w-full rounded-2xl bg-white p-3 shadow-[0_15px_40px_rgba(0,0,0,0.3)]">
         <QRCode
           value={qrCodeUrl}
           size={116}
@@ -24,7 +24,7 @@ export function Footer({ dealerName, qrCodeLabel, qrCodeUrl }: FooterProps) {
       <p className="mx-auto mt-4 max-w-[15rem] text-xs leading-5 text-slate-400">
         {qrCodeLabel}
       </p>
-      <p className="mt-6 text-[0.68rem] uppercase tracking-[0.18em] text-slate-600">
+      <p className="mt-6 text-[0.68rem] uppercase tracking-[0.18em] text-slate-600 max-[359px]:tracking-[0.12em]">
         {dealerName}
       </p>
     </footer>
