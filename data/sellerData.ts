@@ -48,11 +48,10 @@ export const sellerData: SellerData = {
     "https://wa.me/5511999999999?text=Ol%C3%A1%2C%20Yan!%20Quero%20conhecer%20as%20motocicletas.",
   catalog: "https://www.bajaj.com.br/pt-BR/motocicletas",
   instagram: "https://www.instagram.com/bajajdobrasil/",
-  address:
-    "Alameda São Boaventura, 512, Fonseca, Niterói - RJ, 24120-191, Brasil",
-  latitude: "-22.8793856",
-  longitude: "-43.0929542",
-  dealerName: "Bajaj Prime Motors",
+  address: "Alameda São Boaventura, 512 - Fonseca, Niterói - RJ, 24120-191",
+  latitude: "-22.8810625",
+  longitude: "-43.0969375",
+  dealerName: "Euroville Bajaj Niterói",
   logo: "/bajajlogo.png",
   profileMessage:
     "Estou aqui para ajudar você a encontrar a motocicleta ideal.",
@@ -60,7 +59,7 @@ export const sellerData: SellerData = {
   mapsButtonLabel: "Abrir no Google Maps",
   shareButtonLabel: "Compartilhe meu cartão",
   shareTitle: "Cartão digital de Yan Mota",
-  shareText: "Fale com Yan Mota, consultor da Bajaj Prime Motors.",
+  shareText: "Fale com Yan Mota, consultor da Euroville Bajaj Niterói.",
   shareSuccessMessage: "Cartão compartilhado!",
   copySuccessMessage: "Link copiado!",
   shareErrorMessage: "Não foi possível compartilhar.",
@@ -68,7 +67,7 @@ export const sellerData: SellerData = {
   qrCodeUrl: "https://w.app/vendedoryanmotabajaj",
   pageUrl: "https://seu-dominio.com.br/yan-mota",
   seoDescription:
-    "Cartão digital de Yan Mota, consultor de vendas da Bajaj Prime Motors. Conheça modelos, catálogo e entre em contato.",
+    "Cartão digital de Yan Mota, consultor de vendas da Euroville Bajaj Niterói. Conheça modelos, catálogo e entre em contato.",
   actions: [
     {
       icon: "whatsapp",
