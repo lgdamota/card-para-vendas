@@ -50,19 +50,22 @@ export function ShareButton({
   }
 
   return (
-    <div className="mt-9 px-5 text-center max-[359px]:mt-8 max-[359px]:px-3">
+    <div className="mt-[clamp(2rem,4vw,3rem)] px-[var(--app-gutter)] text-center">
       <button
         type="button"
         onClick={handleShare}
-        className="inline-flex min-h-12 max-w-full items-center justify-center gap-2 rounded-full border border-sky-400/40 bg-sky-400/10 px-6 text-center text-sm font-semibold leading-5 text-sky-300 backdrop-blur-md transition duration-300 hover:border-sky-300 hover:bg-sky-400 hover:text-slate-950 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-300 max-[359px]:px-4 max-[359px]:text-[0.8rem]"
+        className="inline-flex min-h-[clamp(3rem,5.5vw,3.75rem)] max-w-full items-center justify-center gap-[clamp(0.5rem,1vw,0.75rem)] rounded-full border border-sky-400/40 bg-sky-400/10 px-[clamp(1rem,3vw,2rem)] text-center text-[clamp(0.8rem,1.35vw,1rem)] font-semibold leading-5 text-sky-300 backdrop-blur-md transition duration-300 hover:border-sky-300 hover:bg-sky-400 hover:text-slate-950 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-300"
       >
         {feedback ? (
           <HiOutlineCheckCircle
-            className="shrink-0 text-xl"
+            className="shrink-0 text-[clamp(1.25rem,2vw,1.5rem)]"
             aria-hidden="true"
           />
         ) : (
-          <HiOutlineShare className="shrink-0 text-xl" aria-hidden="true" />
+          <HiOutlineShare
+            className="shrink-0 text-[clamp(1.25rem,2vw,1.5rem)]"
+            aria-hidden="true"
+          />
         )}
         {feedback || label}
       </button>
